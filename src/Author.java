@@ -26,10 +26,18 @@ public class Author
 
     public String toString()
     {
-        if (this.fullName.equals(this.firstName + " " + this.lastName))
-        {
-            return "Автор: " + this.fullName;
-        }
-        else throw new IllegalAccessError("невозможно");
+        return "Автор: " + this.fullName;
+    }
+
+    public boolean equals(String a)
+    {
+        boolean b = this.equals(a);
+        return b;
+    }
+
+    public int hashCode(String c)
+    {
+        int d = this.hashCode();
+        return d;
     }
 }

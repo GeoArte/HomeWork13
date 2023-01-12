@@ -29,14 +29,18 @@ public class Book {
 
     public String toString()
     {
-        if (this.author.hashCode()>0)
-        {
-            if (this.name.hashCode()>0)
-            {
-                System.out.print(author);
-                return ", название: " + this.name + ", год публикации: " + this.year;
-            } else throw new IllegalAccessError("не указано название");
-        }
-        else throw new IllegalAccessError("не указан автор");
+        System.out.print(author);
+        return ", название: " + this.name + ", год публикации: " + this.year;
+    }
+    public boolean equals(String a)
+    {
+        boolean b = this.equals(a);
+        return b;
+    }
+
+    public int hashCode(String c)
+    {
+        int d = this.hashCode();
+        return d;
     }
 }
