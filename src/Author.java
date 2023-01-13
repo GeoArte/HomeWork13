@@ -29,13 +29,13 @@ public class Author
         return "Автор: " + this.fullName;
     }
 
-    public boolean equals(String a)
+    public boolean equals(Author a)
     {
         boolean b = this.equals(a);
         return b;
     }
 
-    public int hashCode(String c)
+    public int hashCode(Author c)
     {
         int d = this.hashCode();
         return d;

@@ -32,13 +32,13 @@ public class Book {
         System.out.print(author);
         return ", название: " + this.name + ", год публикации: " + this.year;
     }
-    public boolean equals(String a)
+    public boolean equals(Book a)
     {
         boolean b = this.equals(a);
         return b;
     }
 
-    public int hashCode(String c)
+    public int hashCode(Book c)
     {
         int d = this.hashCode();
         return d;
